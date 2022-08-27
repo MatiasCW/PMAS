@@ -1,0 +1,297 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-image: url(media/heart.jpg);
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-left: 8%;
+	padding-right: 8%;
+        background: linear-gradient(315deg, #03E1FF, #425E8B);
+}
+.logo{
+	color: white;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.logo-img{
+	  padding: 5px;
+          width: 150px;;
+        
+}
+span{
+	color: #03E1FF;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #03E1FF;
+	transition: .4s;
+}
+.btn{
+	background-color:#425E8B;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+        
+}
+.btn:hover{
+	transform: scale(1.2);
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left:8%;
+	transform: translateY(-50%);
+      
+}
+h1{
+	color: #FFFFFF;
+	margin: 20px 0px 20px;
+	font-size: 90px;
+}
+
+h3{
+	color: #FFFFFF;
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+h4{
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+}
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text{
+	width: 600px;
+}
+
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #03E1FF;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.objective-text p{
+        color: #03E1FF;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;	
+}
+.objective-text h2{
+        color: #FFFFFF;
+	letter-spacing: 1px;
+	line-height: 28px;
+        text-align: center;
+}
+
+button{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+
+.objective{
+
+        background-image: url(media/heart.jpg);
+     	height: 80vh;
+	width: 100%;
+	background-image: url(media/heartbeat.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card{
+	margin: auto;
+        width: 50%;
+        padding: 1vh;
+	background: #191919;
+	border-radius: 4vh;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+        margin-top: 10vh;
+     
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25vh;
+	color: #f9004d;
+
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+
+
+.contact-me{
+	width: 100%;
+	height: 290px;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.contact-me p{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.contact-me .button-two{
+	background-color:#f9004d;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.contact-me .button-two:hover{
+	background-color: transparent;
+	border: 2px solid #f9004d;
+	cursor: pointer;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+        bottom:-20vh;
+}
+
+footer p{
+	font-size: 30px;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(315deg, #03E1FF, #425E8B);
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.obj { 	
+        color: white;
+	font-size: 90px;
+	text-align: center;
+        background: black;
+        margin-top: 30px;
+}       
+
+body {
+       background: black;
+}  
+
+
+
+                
