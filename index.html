@@ -1,80 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Portfolio website</title>
-	<link rel="stylesheet" type="text/css" href="home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
-	
-		
-	<div class="hero">
-		
-		<nav>
-	                <img src="media/PMAS.jpg" style="width:140px;margin-top:-25px">
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Bot!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
 
-			<ul>
-				<h2><li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="Services.html">Services</a></li>
-				<li><a href="Team.html">Team</a></li></h2>
-			</ul>
-			<a href="#" class="btn">Sign in</a>
-		</nav>
-		
-	<video autoplay loop class= "back-video" muted plays-inline>
-		<source src= "media/video2.mp4" type = "video/mp4">
-		</video>
-		<div class="content">
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <img src="https://cdn.discordapp.com/attachments/1011451091214401646/1012886947049504830/PMAS2.jpg" class="avatar" alt="">
+                            <p id="botStarterMessage" class="botText">
+                            <span>Loading...</span></p>
+                        </div>
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
 
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
 
-			<h1>PMAS will answer your health concerns</h1>
-			
-			</div>
-		</div>
-	</div>
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
 
-	<section class="home">
-		<div class="main">
-			<img src="media/disease.jpg">
-		
-			<div class="home-text">
-				<h3> The solution is closer than you think </h3>
-				<p>Find your health concerns on our website. There is 79 organs in the human body which one are you concerned about? There are around 10 000 illnesses and conditions around the world. We want you and your family to be safe.        </p>
-			</div>
-		</div>
-	</section>
+                    </div>
+                </div>
 
+            </div>
+        </div>
 
-	<div class="service">
-		<div class="title">
-			<h2>GET TO KNOW BOT SUBA</h2>
-		</div>
-		<video autoplay loop class= "dna-video" muted plays-inline>
-		<source src= "media/video9.mp4" type = "video/mp4">
-		</video>
-		<div class="main">
-			<div class="suba-text">
-		<p>Bot Suba runs on Python and the reason it was created was to help users. Bot Suba is acts similar to a search engine in the way that it will give you the answer or definition to the illness or disease you are looking for. For example, if you are wondering what Cardiomyopathy is then, it will show you the definition for it or if you are wondering what Mononucleosis is, then it will also show you results for it. Users will use the bot if they have any doubts or concerns on what a disorder or condition means. The bot can also answer solution to problems such as a solution to stop a nosebleed.    </p>
-		</div>
-		
-	</div>
-
-
-<footer>
-		<p>For more information click on the following links</p>
-                <div class="social">
-			<a href="#"><i class="fab fa-facebook-f"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
-			<a href="#"><i class="fab fa-dribbble"></i></a>
-		</div>
-	     	
-	</footer>
+    </div>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+
 </html>
